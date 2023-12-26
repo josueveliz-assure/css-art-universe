@@ -371,4 +371,20 @@ div {
     height: 496px;
 }
 
+.stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    z-index: -1;
+    animation: moveStars 100s linear infinite;
+}
+
+@keyframes moveStars {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+}
 
