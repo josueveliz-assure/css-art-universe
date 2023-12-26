@@ -128,3 +128,57 @@ div {
     background: #fc7b0f;
     transform: translate(300%, 490%);
 }
+
+.jupiter {
+    position: absolute;
+    width: 45%;
+    height: 57%;
+    top: 40%;
+    left: 10%;
+    transform-style: preserve-3d;
+}
+
+.jupiter > div {
+    border-radius: 50%;
+    background-color: preserve-3d;
+}
+
+.jupiter__atmosphere {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(-85deg);
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    background: rgb(22,19,77);
+    background: linear-gradient(90deg, rgba(255,218,83,1) 0%, rgba(230,170,95,1) 6%, rgba(191,121,63,1) 12%, rgba(181,155,87,1) 18%, rgba(180,125,70,1) 23%, rgba(190,162,58,1) 35%, rgba(175,110,45,1) 43%, rgba(143,113,69,1) 52%, rgba(171,163,51,1) 59%, rgba(212,176,134,1) 67%, rgba(190,146,80,1) 74%, rgba(171,131,62,1) 81%, rgba(195,161,86,1) 88%, rgba(198,170,89,1) 93%, rgba(255,218,83,1) 100%);
+    box-shadow: inset 0 0 40px rgba(45, 122, 122, 0.801);
+}
+
+.jupiter__moon {
+    height: 2vw;
+    width: 2vw;
+    background-color: #fff;
+    position: relative;
+    transform: translate(200%, 500%);
+    animation: axis 15s infinite ease-in-out;
+    z-index: 1;
+}
+
+@keyframes axis {
+    49% {
+        z-index: 1;
+    }
+    50% {
+        transform: translate(1900%, 730%);
+        z-index: -1;
+    }
+    99% {
+        z-index: -1;
+    }
+    100% {
+        transform: translate(200%, 500%);
+        z-index: 1;
+    }
+}
