@@ -584,6 +584,22 @@ body:has(.asteroid:active) > .asteroids {
     }
 }
 
+.saturn__atmosphere {
+    cursor: pointer;
+}
+
+.jupiter__atmosphere {
+    cursor: pointer;
+}
+
+.uranus__atmosphere {
+    cursor: pointer;
+}
+
+.asteroid {
+    cursor: pointer;
+}
+
 body:has(.saturn__atmosphere:active) > .saturn > .saturn__ring {
     animation: rotateRing 1s linear infinite;
 }
