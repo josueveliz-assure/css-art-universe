@@ -372,8 +372,8 @@ div {
 }
 
 .stars {
-    width: 1px;
-    height: 1px;
+    width: 3px;
+    height: 3px;
     background: transparent;
     z-index: -1;
     animation: moveStars 100s linear infinite;
