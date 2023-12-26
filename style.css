@@ -9,3 +9,122 @@ body {
     height: 100dvh;
     width: 100dvw;
 }
+
+div {
+    position: absolute;
+}
+
+.sun {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 0%;
+}
+
+.sun > div {
+    border-radius: 50%;
+}
+
+.sun__chromosphere {
+    width: 40vw;
+    height: 40vw;
+    transform: translate(-50%, -50%);
+}
+
+.sun--orange {
+    background-color: #ffaa0e;
+}
+
+.sun--orange-shadow {
+    box-shadow: inset 0 0 150px rgba(255, 42, 14, 0.801);
+}
+
+.sun__corona {
+    width: 40vw;
+    height: 40vw;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5rem 9rem #ff4b02
+}
+
+.sun__layer-1 {
+    width: 43vw;
+    height: 43vw;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 150px rgba(255, 42, 14, 0.801);
+}
+
+.sun__layer-2 {
+    width: 46vw;
+    height: 46vw;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 50px rgba(252, 73, 19, 0.801);
+}
+
+.sun__layer-3 {
+    width: 40vw;
+    height: 40vw;
+    box-shadow: inset 0 0px 85px rgba(238, 119, 113, 0.801);
+    transform: translate(-50%, -50%);;
+}
+
+.sun__flare-1--layer-1 {
+    width: 6vw;
+    height: 6vw;
+    transform: translate(17%, 65%);
+    box-shadow: inset 0 0 25px rgba(255, 211, 29, 0.81);
+}
+
+.sun__flare-1--layer-2 {
+    width: 3vw;
+    height: 3vw;
+    transform: translate(85%, 180%);
+    box-shadow: inset 0 0 25px rgba(236, 226, 184, 0.801);
+}
+
+.sun__flare-1--layer-3 {
+    width: 2vw;
+    height: 2vw;
+    background: #fff995;
+    transform: translate(155%, 295%);
+}
+
+.sun__flare-2--layer-1 {
+    width: 4vw;
+    height: 4vw;
+    transform: translate(280%, 15%);
+    box-shadow: inset 0 0 25px rgba(255, 211, 29, 0.81);
+}
+
+.sun__flare-2--layer-2 {
+    width: 2vw;
+    height: 2vw;
+    transform: translate(615%, 80%);
+    box-shadow: inset 0 0 25px rgba(236, 226, 184, 0.801);
+}
+
+.sun__flare-2--layer-3 {
+    width: 1vw;
+    height: 1vw;
+    background: #fff995;
+    transform: translate(1280%, 210%);
+}
+
+.sun__spot-1 {
+    width: 0.5vw;
+    height: 0.5vw;
+    background: #fc7b0f;
+    transform: translate(1280%, 210%);
+}
+
+.sun__spot-2 {
+    width: 1vw;
+    height: 1vw;
+    background: #fc7b0f;
+    transform: translate(900%, 210%);
+}
+
+.sun__spot-3 {
+    width: 2vw;
+    height: 2vw;
+    background: #fc7b0f;
+    transform: translate(300%, 490%);
+}
