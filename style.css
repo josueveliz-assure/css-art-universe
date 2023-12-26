@@ -497,3 +497,191 @@ body:has(.asteroid:active) > .asteroids {
     display: block;
 }
 
+.uranus {
+    position: fixed;
+    width: 30%;
+    height: 27%;
+    top: 67%;
+    left: 67%;
+    border-radius: 0%;
+    transform-style: preserve-3d;
+}
+
+.uranus__atmosphere {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: rgb(74,145,235);
+    background: linear-gradient(185deg, rgba(74,145,235,1) 0%, rgba(176,167,219,1) 20%, rgba(93,135,213,1) 25%, rgba(164,171,235,1) 31%, rgba(154,170,221,1) 40%, rgba(93,163,205,1) 49%, rgba(70,143,176,1) 64%, rgba(77,110,200,1) 73%, rgba(79,112,208,1) 76%, rgba(83,164,224,1) 86%, rgba(119,189,249,1) 100%);
+}
+
+.uranus > div, .uranus__ring > div {
+    border-radius: 50%;
+}
+
+.uranus__ring {
+    top: -35px;
+    left: -10px;
+    right: 0px;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #fff;
+    border-right: 3px solid transparent;
+    animation: rotateUranusRing 5s linear infinite;
+}
+
+.uranus__ring-1 {
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    opacity: 0.6;
+    left: -5px;
+    top: -5px;
+    width: 255px;
+    height: 255px;
+}
+
+.uranus__ring-2 {
+    border: 3px solid #fff;
+    border-left: 3px solid transparent;
+    opacity: 0.6;
+    left: -10px;
+    top: -10px;
+    width: 265px;
+    height: 265px;
+}
+
+.uranus__ring-3 {
+    border: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    opacity: 0.7;
+    left: -15px;
+    top: -15px;
+    width: 275px;
+    height: 275px;
+}
+
+.uranus__ring-4 {
+    border: 3px solid #fff;
+    border-right: 3px solid transparent;
+    opacity: 0.6;
+    left: -20px;
+    top: -20px;
+    width: 285px;
+    height: 285px;
+}
+
+@keyframes rotateUranusRing {
+    0% {
+        transform: rotateX(-105deg) rotateY(-4deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(-105deg) rotateY(-4deg) rotateZ(360deg);
+    }
+}
+
+body:has(.saturn__atmosphere:active) > .saturn > .saturn__ring {
+    animation: rotateRing 1s linear infinite;
+}
+
+body:has(.uranus__atmosphere:active) > .uranus > .uranus__ring {
+    animation: rotateUranusRing 1s linear infinite;
+}
+
+body:has(.jupiter__atmosphere:active) > .jupiter > .jupiter__moon {
+    transform: scale(2);
+    top: 37%;
+    left: 10%;
+    animation: axisScale 25s infinite ease-in-out;
+}
+
+@keyframes axisScale {
+    49% {
+        z-index: 1;
+    }
+    50% {
+        transform: translate(1650%, 200%) scale(2);
+        z-index: -1;
+    }
+    99% {
+        z-index: -1;
+    }
+    100% {
+        transform: translate(9%, 0%) scale(2);
+        z-index: 1;
+    }
+}
+
+.sun__flare-1--layer-1 {
+    animation: flare-1 5s linear infinite;
+}
+
+.sun__flare-1--layer-2 {
+    animation: flare-2 5s linear infinite;
+    animation-delay: 4s;
+}
+
+.sun__flare-2--layer-1 {
+    animation: flare-3 5s linear infinite;
+    animation-delay: 2s;
+}
+
+.sun__flare-2--layer-2 {
+    animation: flare-4 5s linear infinite;
+}
+
+@keyframes flare-1 {
+    0% {
+        transform: translate(17%, 65%) scale(1);
+    }
+    50% {
+        transform: translate(17%, 65%) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(17%, 65%) scale(1);
+    }
+}
+
+@keyframes flare-2 {
+    0% {
+        transform: translate(85%, 180%) scale(1);
+    }
+    50% {
+        transform: translate(85%, 180%) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(85%, 180%) scale(1);
+    }
+}
+
+@keyframes flare-3 {
+    0% {
+        transform: translate(280%, 15%) scale(1);
+    }
+    50% {
+        transform: translate(280%, 15%) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(280%, 15%) scale(1);
+    }
+}
+
+@keyframes flare-4 {
+    0% {
+        transform: translate(615%, 80%) scale(1);
+    }
+    50% {
+        transform: translate(615%, 80%) scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(615%, 80%) scale(1);
+    }
+}
